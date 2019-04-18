@@ -1,0 +1,58 @@
+package stepDefinition;
+
+
+import java.io.IOException;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import managers.PageObjectManager;
+import managers.WebDriverManager;
+import utils.Config;
+import utils.HTMLReportGenerator;
+
+public class Hooks {
+
+	public static WebDriverManager webDriverManager;
+	public static PageObjectManager pageObjectManager;
+	
+	@Before
+	public void before(Scenario scene) throws IOException   {
+		if(Config.InitStarted==false)
+		{
+			Config.InitFlags();
+			Config.InitStarted = true;
+		}
+		//Initialize objects of managers
+		webDriverManager = new WebDriverManager();
+		//Initialize browser
+		pageObjectManager = new PageObjectManager(webDriverManager.getDriver());
+	    System.out.println("pageObjectManager:"+pageObjectManager);
+		HTMLReportGenerator.TestSuiteStart(Config.strReportFolderPath , "ejagruti");
+		String ScenarioName = scene.getName();
+		HTMLReportGenerator.TestCaseStart(ScenarioName, ScenarioName);
+		System.out.println("inccnt in before hook"+Config.intcnt);
+		Config.intcnt = Config.intcnt+1;
+
+	}
+
+//returns manager object
+		public WebDriverManager getWebDriverManager() 
+		{
+			return webDriverManager;
+		}
+		public PageObjectManager getPageObjectManager() {
+			return pageObjectManager;
+		}
+	
+
+@After
+	public void after() throws InterruptedException {
+	System.out.println("inccnt in after hook"+Config.intcnt);
+	Config.intcnt = Config.intcnt+1;
+	Thread.sleep(2000);
+	HTMLReportGenerator.TestCaseEnd();
+	HTMLReportGenerator.TestSuiteEnd();
+//	testContext.getWebDriverManager().closeDriver();
+	}
+
+}

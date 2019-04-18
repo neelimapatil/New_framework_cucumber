@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="New_Cucumber" tests="23" started="23" failures="0" errors="2" ignored="22">
+  <testsuite name="runners.TestRunner" time="3.102">
+    <testsuite name="Feature: ManageCompany" time="3.102">
+      <testsuite name="Scenario: Edit the Newly created Company" time="0.001" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at stepDefinition.Login.&lt;init&gt;(Login.java:27)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)&#13;
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)&#13;
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)&#13;
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)&#13;
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)&#13;
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)&#13;
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)&#13;
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)&#13;
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)&#13;
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)&#13;
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)&#13;
+	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)&#13;
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:314)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:312)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:396)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:314)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:312)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:396)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:539)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:761)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:461)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:207)&#13;
+	at ✽.Given User is on Login Page(src/test/resources/Features/Edit_company.feature:17)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on Login Page" classname="Scenario: Edit the Newly created Company" time="0.001">
+          <error>java.lang.NullPointerException&#13;
+	at stepDefinition.Login.&lt;init&gt;(Login.java:27)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)&#13;
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)&#13;
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)&#13;
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)&#13;
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)&#13;
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)&#13;
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)&#13;
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)&#13;
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)&#13;
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)&#13;
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)&#13;
+	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)&#13;
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:314)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:312)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:396)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:314)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:312)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:396)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:539)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:761)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:461)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:207)&#13;
+	at ✽.Given User is on Login Page(src/test/resources/Features/Edit_company.feature:17)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When user login with &quot;dummyfm&quot; and &quot;passw0rd&quot; with data from json file" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="When user clicks on Financial Analysis link" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="And user clicks on Company link" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="And user clicks on Manage Company link" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="When user clicks on New button" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="And User enters Company name as &quot;Tester67&quot;" classname="Scenario: Edit the Newly created Company" time="0.001" ignored="true"/>
+        <testcase name="And User selects Company type as &quot;IT&quot;" classname="Scenario: Edit the Newly created Company" time="0.003" ignored="true"/>
+        <testcase name="And User Company Subtype as &quot;Support&quot;" classname="Scenario: Edit the Newly created Company" time="0.004" ignored="true"/>
+        <testcase name="And User enters Address as &quot;Pune&quot;" classname="Scenario: Edit the Newly created Company" time="0.003" ignored="true"/>
+        <testcase name="And User enters Phone as &quot;0123456789&quot;" classname="Scenario: Edit the Newly created Company" time="0.004" ignored="true"/>
+        <testcase name="And User enters Email as &quot;abcdef@gmail.com&quot;" classname="Scenario: Edit the Newly created Company" time="0.007" ignored="true"/>
+        <testcase name="And User enters Pan Details as &quot;ARPPT3211265498&quot;" classname="Scenario: Edit the Newly created Company" time="0.009" ignored="true"/>
+        <testcase name="And User enters Tin details as &quot;32165432165487&quot;" classname="Scenario: Edit the Newly created Company" time="0.008" ignored="true"/>
+        <testcase name="And User enters Mobile details as &quot;9881193477&quot;" classname="Scenario: Edit the Newly created Company" time="0.01" ignored="true"/>
+        <testcase name="And User enters Country as &quot;INDIA&quot;" classname="Scenario: Edit the Newly created Company" time="0.002" ignored="true"/>
+        <testcase name="And User enters State as &quot;MAHARASHTRA&quot;" classname="Scenario: Edit the Newly created Company" time="0.001" ignored="true"/>
+        <testcase name="And User enters City name as &quot;PUNE&quot;" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="And User enters Total Employee as &quot;1&quot;" classname="Scenario: Edit the Newly created Company" time="0.009" ignored="true"/>
+        <testcase name="And User clicks on Save button" classname="Scenario: Edit the Newly created Company" time="0.007" ignored="true"/>
+        <testcase name="Then user selects the newly created company to Edit" classname="Scenario: Edit the Newly created Company" time="0.006" ignored="true"/>
+        <testcase name="And change the mobile no to &quot;9881193455&quot;" classname="Scenario: Edit the Newly created Company" time="0.003" ignored="true"/>
+        <testcase name="And User clicks on Save button" classname="Scenario: Edit the Newly created Company" time="3.022" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

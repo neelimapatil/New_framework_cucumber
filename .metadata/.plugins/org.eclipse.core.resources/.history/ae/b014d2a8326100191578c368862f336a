@@ -1,0 +1,26 @@
+package utils;
+
+
+import cucumber.ScenarioContext;
+import managers.PageObjectManager;
+import managers.WebDriverManager;
+
+public class Object_manager {
+	
+	private WebDriverManager webDriverManager;
+	private PageObjectManager pageObjectManager;
+	ScenarioContext scenarioContext;
+	
+	public WebDriverManager getWebDriverManager() {
+		return webDriverManager;
+	}
+	
+	public PageObjectManager getPageObjectManager() {
+		return pageObjectManager;
+	}
+	public ScenarioContext getScenarioContext() {
+		 return scenarioContext;
+		 }
+}
+
+

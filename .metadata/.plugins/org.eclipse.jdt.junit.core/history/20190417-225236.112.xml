@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="New_Cucumber" tests="26" started="26" failures="0" errors="4" ignored="24">
+  <testsuite name="runners.TestRunner" time="15.672">
+    <testsuite name="Feature: ManageCompany" time="15.672">
+      <testsuite name="Scenario Outline: Login Functionality for valid username and valid password using json data" time="0.0">
+        <testsuite name="Examples:" time="0.0">
+          <testsuite name="| 0 |" time="0.0" incomplete="true">
+            <error>java.lang.NullPointerException&#13;
+	at pageObjects.LoginPage.navigateToLoginPage(LoginPage.java:65)&#13;
+	at stepDefinition.Login.userIsOnLoginPage(Login.java:38)&#13;
+	at ✽.Given User is on Login Page(src/test/resources/Features/Edit_company.feature:8)&#13;
+&#13;
+</error>
+            <testcase name="Given User is on Login Page" classname="| 0 |" time="0.0">
+              <error>java.lang.NullPointerException&#13;
+	at pageObjects.LoginPage.navigateToLoginPage(LoginPage.java:65)&#13;
+	at stepDefinition.Login.userIsOnLoginPage(Login.java:38)&#13;
+	at ✽.Given User is on Login Page(src/test/resources/Features/Edit_company.feature:8)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="When user login with &quot;valid&quot; username and password with data from json file 0" classname="| 0 |" time="0.0" ignored="true"/>
+            <testcase name="Then user should be on home page." classname="| 0 |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Scenario: Edit the Newly created Company" time="0.002" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at pageObjects.LoginPage.navigateToLoginPage(LoginPage.java:65)&#13;
+	at stepDefinition.Login.userIsOnLoginPage(Login.java:38)&#13;
+	at ✽.Given User is on Login Page(src/test/resources/Features/Edit_company.feature:17)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on Login Page" classname="Scenario: Edit the Newly created Company" time="0.001">
+          <error>java.lang.NullPointerException&#13;
+	at pageObjects.LoginPage.navigateToLoginPage(LoginPage.java:65)&#13;
+	at stepDefinition.Login.userIsOnLoginPage(Login.java:38)&#13;
+	at ✽.Given User is on Login Page(src/test/resources/Features/Edit_company.feature:17)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When user login with &quot;dummyfm&quot; and &quot;passw0rd&quot; with data from json file" classname="Scenario: Edit the Newly created Company" time="0.01" ignored="true"/>
+        <testcase name="When user clicks on Financial Analysis link" classname="Scenario: Edit the Newly created Company" time="0.007" ignored="true"/>
+        <testcase name="And user clicks on Company link" classname="Scenario: Edit the Newly created Company" time="0.016" ignored="true"/>
+        <testcase name="And user clicks on Manage Company link" classname="Scenario: Edit the Newly created Company" time="0.007" ignored="true"/>
+        <testcase name="When user clicks on New button" classname="Scenario: Edit the Newly created Company" time="0.005" ignored="true"/>
+        <testcase name="And User enters Company name as &quot;Tester67&quot;" classname="Scenario: Edit the Newly created Company" time="0.003" ignored="true"/>
+        <testcase name="And User selects Company type as &quot;IT&quot;" classname="Scenario: Edit the Newly created Company" time="0.004" ignored="true"/>
+        <testcase name="And User Company Subtype as &quot;Support&quot;" classname="Scenario: Edit the Newly created Company" time="0.013" ignored="true"/>
+        <testcase name="And User enters Address as &quot;Pune&quot;" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="And User enters Phone as &quot;0123456789&quot;" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="And User enters Email as &quot;abcdef@gmail.com&quot;" classname="Scenario: Edit the Newly created Company" time="0.013" ignored="true"/>
+        <testcase name="And User enters Pan Details as &quot;ARPPT3211265498&quot;" classname="Scenario: Edit the Newly created Company" time="0.005" ignored="true"/>
+        <testcase name="And User enters Tin details as &quot;32165432165487&quot;" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="And User enters Mobile details as &quot;9881193477&quot;" classname="Scenario: Edit the Newly created Company" time="0.004" ignored="true"/>
+        <testcase name="And User enters Country as &quot;INDIA&quot;" classname="Scenario: Edit the Newly created Company" time="0.002" ignored="true"/>
+        <testcase name="And User enters State as &quot;MAHARASHTRA&quot;" classname="Scenario: Edit the Newly created Company" time="0.006" ignored="true"/>
+        <testcase name="And User enters City name as &quot;PUNE&quot;" classname="Scenario: Edit the Newly created Company" time="0.003" ignored="true"/>
+        <testcase name="And User enters Total Employee as &quot;1&quot;" classname="Scenario: Edit the Newly created Company" time="0.004" ignored="true"/>
+        <testcase name="And User clicks on Save button" classname="Scenario: Edit the Newly created Company" time="0.001" ignored="true"/>
+        <testcase name="Then user selects the newly created company to Edit" classname="Scenario: Edit the Newly created Company" time="0.009" ignored="true"/>
+        <testcase name="And change the mobile no to &quot;9881193455&quot;" classname="Scenario: Edit the Newly created Company" time="0.0" ignored="true"/>
+        <testcase name="And User clicks on Save button" classname="Scenario: Edit the Newly created Company" time="0.896" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

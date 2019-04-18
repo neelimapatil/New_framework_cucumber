@@ -1,0 +1,82 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+import dataProvider.ConfigFileReader;
+import junit.framework.Assert;
+
+public class HomePage {
+	
+	WebDriver driver;
+	
+	public HomePage(WebDriver driver){
+		 this.driver = driver;
+		 PageFactory.initElements(driver, this);
+		 }
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'LOGOUT')]") 
+	private WebElement lnk_logout;
+	
+	public String[] ClickOnFinAnaLink(String strArray[]) throws InterruptedException
+	{
+		String strExpectedMatchActual[] = new String [1]; 
+		strExpectedMatchActual[0]="false";
+		//click on financial analysis
+		WebElement objLink=driver.findElement(By.xpath("//div[contains(text(),'Financial Analysis')]/parent::div"));
+		String strVar = objLink.getAttribute("class");
+		System.out.println(strVar);
+		if (strVar.contains("selected"))
+		{
+		;
+		}	
+		else
+		{
+			objLink=driver.findElement(By.xpath("//div[contains(text(),'Financial Analysis')]/following-sibling::div"));
+			objLink.click();
+		}
+		return null;
+	}
+		//click on company
+	public String[] ClickOnCompany(String strArray[]) throws InterruptedException
+	{
+		WebElement objLink=driver.findElement(By.xpath("//*[@id='_easyui_tree_1']//child::span[1]"));
+		String strVar = objLink.getAttribute("class");
+		System.out.println(strVar);
+		if (strVar.contains("expanded"))
+		{
+		;
+		}	
+		else
+		{
+			objLink=driver.findElement(By.xpath("//*[@id='_easyui_tree_1']//child::span[1]"));
+			objLink.click();
+		}
+		return null;
+	}
+	public String[] ClickOnManageCompany(String strArray[]) throws InterruptedException
+	{
+	
+		WebElement objLink=driver.findElement(By.xpath("//a[contains(text(), 'Manage Company')]"));
+		objLink.click();
+		return null;
+	}
+	 public void ClickLogoutLink() throws Exception {
+	    	Thread.sleep(4000);
+	    	try
+	    	{
+	    	WebElement objTemp=driver.findElement(By.xpath("//a[contains(text(),'LOGOUT')]"));
+	    	objTemp.click();
+	    	}
+	    	catch(Exception e)
+			{
+	    		System.out.println(e);
+			}
+	      }
+	public void userIsOnHomePage() {
+			Assert.assertEquals(true, lnk_logout.isDisplayed());
+		}
+}
